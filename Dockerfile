@@ -1,7 +1,7 @@
 FROM golang:1.20
 
-WORKDIR /app
-COPY . /app
+WORKDIR /src
+COPY . /src
 RUN make build
 EXPOSE 4561
 CMD ["make", "run"]

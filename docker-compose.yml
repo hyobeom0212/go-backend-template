@@ -1,0 +1,8 @@
+version: "2.4"
+services:
+  gokay-auth:
+    container_name: gokay-bootstrap
+    build: .
+    image: gokay-auth:latest
+    ports:
+      - "4561:4561"
